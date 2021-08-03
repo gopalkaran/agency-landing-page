@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  color: #444;
+}
+
+.header {
+  background-image: url("/desktop/image-header.jpg");
+  min-height: 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  padding-left: 0;
+}
+
+.nav-bar li {
+  margin-right: 2rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar li:first-child {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.nav-bar li:last-child {
+  background-color: #60a5fa;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+}
+
+.nav-bar .nav-checkbox {
+  display: none;
+}
+
+.nav-bar .nav-toggle .menu {
+  display: none;
+}
+
+.header-title {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header svg {
+  position: absolute;
+  top: 20rem;
+}
+.arrow-down {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row .column-img {
+  height: 100%;
+  width: 50vw;
+}
+
+.column {
+  flex: 1;
+}
+
+.row {
+  height: 30rem;
+  display: flex;
+}
+
+.row .column-info {
+  padding: 4rem;
+  max-width: 50vw;
+  background-color: #eee;
+  position: relative;
+}
+
+.row .column-info a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+}
+
+.row .column-info a::after {
+  content: "";
+  height: 0.5rem;
+  width: 7rem;
+  background-color: #f87171;
+  border-radius: 1rem;
+  display: block;
+  position: absolute;
+  left: -0.5rem;
+  top: 0.8rem;
+  z-index: -1;
+}
+
+.row-one .column-info a::after {
+  background-color: #fbbf24;
+}
+
+.row-three .column {
+  position: relative;
+}
+
+.row-three .img-content {
+  position: absolute;
+  top: 20rem;
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-three .img-content-title {
+  font-weight: bold;
+  /* background-color: blueviolet; */
+  font-size: 1.3rem;
+}
+
+.row-three p {
+  /* background-color: chocolate; */
+  width: 20rem;
+  text-align: center;
+  color: #374f75;
+}
+
+.row-three .img-content-left p {
+  color: rgb(68, 117, 117);
+}
+
+.row-four {
+  height: 40rem;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-container {
+  display: flex;
+  padding: 3rem 4rem 4rem 4rem;
+  gap: 2rem;
+  /* background-color: thistle; */
+}
+
+.testimonial-heading {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 6rem;
+  margin-bottom: 0px;
+}
+
+.col img {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 2rem;
+  /* background-color: blueviolet; */
+}
+
+.col p {
+  /* background-color: yellow; */
+  text-align: center;
+}
+
+.col .testimonial-name {
+  /* background-color: tan; */
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.row-five .col {
+  width: 25vw;
+}
+
+.row-five {
+  height: 25rem;
+}
+
+.footer {
+  background-color: rgb(102, 185, 185);
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-title {
+  /* background-color: thistle; */
+  display: flex;
+  justify-content: center;
+  color: teal;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.nav-group {
+  /* background-color: tomato; */
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-left: 0px;
+}
+.nav-group a {
+  text-decoration: none;
+  color: teal;
+  /* font-weight: 500; */
+}
+.nav-group a:hover {
+  color: white;
+}
+.social-group {
+  /* background-color: yellow; */
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 0px;
+}
+svg {
+  fill: white;
+}
+
+@media only screen and (max-width: 750px) {
+  .row-one {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+  }
+  .row-one .column {
+    min-width: 100vw;
+    min-height: 25rem;
+  }
+
+  .row-two {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+  }
+  .row-two .column {
+    min-width: 100vw;
+    min-height: 25rem;
+  }
+
+  .row-three {
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+  }
+
+  .row-three .column-img,
+  .column {
+    min-width: 100vw;
+    min-height: 30rem;
+  }
+
+  .row-four {
+    min-height: 80rem;
+  }
+
+  .row-four .col-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-five {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12.5rem 12.5rem;
+    grid-template-areas:
+      "topleft topright"
+      "bottomleft bottomright";
+  }
+
+  .row-five .col {
+    width: 100%;
+    height: 100%;
+  }
+
+  .row-five .col1 {
+    grid-area: topleft;
+  }
+
+  .row-five .col2 {
+    grid-area: topright;
+  }
+
+  .row-five .col3 {
+    grid-area: bottomleft;
+  }
+
+  .row-five .col4 {
+    grid-area: bottomright;
+  }
+
+  .header .nav-bar .nav-toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 1rem 2rem;
+    right: 0;
+  }
+
+  .header .nav-bar .nav-toggle .menu {
+    display: block;
+    width: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .header .nav-bar .nav-checkbox {
+    display: none;
+  }
+
+  .header .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .header .nav-bar li:not(:first-child) {
+    display: none;
+  }
+
+  .header .nav-bar li:not(:first-child) a {
+    color: inherit;
+    font-weight: bold;
+  }
+
+  .header .nav-bar #nav-checkbox:checked ~ ul li {
+    display: block;
+  }
+
+  .header .nav-bar li:not(:first-child) {
+    background-color: white;
+  }
+
+  .header .nav-bar li:last-child {
+    background-color: #fbbf24;
+  }
+
+  .header .nav-bar ul {
+    background-color: white;
+    width: 80%;
+    margin: 4rem auto;
+  }
+}
