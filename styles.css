@@ -25,6 +25,17 @@ body {
 .nav-bar {
   position: absolute;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: khaki; */
+}
+
+.nav-bar div .brand-name {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 2rem;
 }
 
 .nav-bar ul {
@@ -46,12 +57,12 @@ body {
   color: white;
 }
 
-.nav-bar li:first-child {
+/* .nav-bar li:first-child {
   margin-right: auto;
   font-weight: bold;
   font-size: 1.2rem;
   margin-left: 2rem;
-}
+} */
 
 .nav-bar li:last-child {
   background-color: #60a5fa;
@@ -339,11 +350,22 @@ svg {
     grid-area: bottomright;
   }
 
+  .header .nav-bar {
+    padding: 1rem 2rem;
+    position: relative;
+    /* background-color: thistle; */
+  }
+
+  .nav-bar div .brand-name {
+    margin-left: 0;
+  }
+
   .header .nav-bar .nav-toggle {
     position: absolute;
     cursor: pointer;
     margin: 1rem 2rem;
     right: 0;
+    top: 0;
   }
 
   .header .nav-bar .nav-toggle .menu {
@@ -359,35 +381,50 @@ svg {
   }
 
   .header .nav-bar ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .header .nav-bar li:not(:first-child) {
     display: none;
   }
 
-  .header .nav-bar li:not(:first-child) a {
+  .header .nav-bar li {
+    margin-right: 0;
+  }
+
+  .header .nav-bar li a {
     color: inherit;
     font-weight: bold;
   }
 
-  .header .nav-bar #nav-checkbox:checked ~ ul li {
-    display: block;
+  .header .nav-bar #nav-checkbox:checked ~ ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    top: 5rem;
+    right: 2rem;
+    z-index: 10;
+    width: 80%;
+    height: 22rem;
+    padding: 2rem;
   }
 
-  .header .nav-bar li:not(:first-child) {
-    background-color: white;
+  .header .nav-bar #nav-checkbox:checked ~ ul::before {
+    content: "";
+    display: block;
+    /* height: 2rem; */
+    /* width: 2rem; */
+    background-color: transparent;
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    border-top: 2rem solid transparent;
+    border-right: 2rem solid white;
+    border-bottom: 2rem solid transparent;
+    border-left: 2rem solid transparent;
   }
 
   .header .nav-bar li:last-child {
     background-color: #fbbf24;
-  }
-
-  .header .nav-bar ul {
-    background-color: white;
-    width: 80%;
-    margin: 4rem auto;
   }
 }
