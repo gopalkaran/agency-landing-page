@@ -449,6 +449,14 @@ svg {
     padding: 1rem;
   }
 
+  .row .column-info {
+    height: auto;
+  }
+
+  .row .column-info > h2 {
+    margin-top: 0;
+  }
+
   .footer .nav-group {
     gap: 2rem;
   }
