@@ -436,7 +436,7 @@ svg {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 450px) {
   .header .header-title {
     font-size: 1.2rem;
   }
