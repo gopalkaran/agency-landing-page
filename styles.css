@@ -153,7 +153,7 @@ body {
 
 .row-three .img-content {
   position: absolute;
-  top: 20rem;
+  top: 18rem;
   /* background-color: blue; */
   width: 100%;
   display: flex;
@@ -442,10 +442,18 @@ svg {
   }
 
   .row-one .column-info {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .row-two .column-info {
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .footer .nav-group {
+    gap: 2rem;
+  }
+
+  .footer .social-group {
+    gap: 1rem;
   }
 }
