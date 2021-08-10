@@ -86,6 +86,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
 }
 
 .header svg {
@@ -166,7 +169,7 @@ body {
 
 .row-three p {
   /* background-color: chocolate; */
-  width: 20rem;
+  max-width: 20rem;
   text-align: center;
   color: #374f75;
 }
@@ -312,7 +315,7 @@ svg {
   }
 
   .row-four {
-    min-height: 80rem;
+    height: auto;
   }
 
   .row-four .col-container {
@@ -426,5 +429,23 @@ svg {
 
   .header .nav-bar li:last-child {
     background-color: #fbbf24;
+  }
+
+  .header .header-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header .header-title {
+    font-size: 1.2rem;
+  }
+
+  .row-one .column-info {
+    padding: 2rem;
+  }
+
+  .row-two .column-info {
+    padding: 2rem;
   }
 }
